@@ -1,27 +1,9 @@
-/*!
- * Lightbox v2.8.2
- * by Lokesh Dhakar
- *
- * More info:
- * http://lokeshdhakar.com/projects/lightbox2/
- *
- * Copyright 2007, 2015 Lokesh Dhakar
- * Released under the MIT license
- * https://github.com/lokesh/lightbox2/blob/master/LICENSE
- */
-
-// Uses Node, AMD or browser globals to create a module.
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
-        // AMD. Register as an anonymous module.
         define(['jquery'], factory);
     } else if (typeof exports === 'object') {
-        // Node. Does not work with strict CommonJS, but
-        // only CommonJS-like environments that support module.exports,
-        // like Node.
         module.exports = factory(require('jquery'));
     } else {
-        // Browser globals (root is window)
         root.lightbox = factory(root.jQuery);
     }
 }(this, function ($) {
@@ -30,14 +12,10 @@
     this.album = [];
     this.currentImageIndex = void 0;
     this.init();
-
-    // options
     this.options = $.extend({}, this.constructor.defaults);
     this.option(options);
   }
 
-  // Descriptions of all options available on the demo site:
-  // http://lokeshdhakar.com/projects/lightbox2/index.html#options
   Lightbox.defaults = {
     albumLabel: 'Zdjęcie %1 z %2',
     alwaysShowNavOnTouchDevices: false,

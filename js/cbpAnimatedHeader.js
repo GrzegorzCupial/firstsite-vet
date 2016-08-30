@@ -13,14 +13,14 @@ var cbpAnimatedHeader = (function() {
 	var docElem = document.documentElement,
 		header = document.querySelector( '.cbp-af-header' ),
 		didScroll = false,
-		changeHeaderOn = 250;
+		changeHeaderOn = 300;
 
 	function init() {
 		scrollPage();
 		window.addEventListener( 'scroll', function( event ) {
 			if( !didScroll ) {
 				didScroll = true;
-				setTimeout( scrollPage, 250 );
+				setTimeout( scrollPage, 10 );
 			}
 		}, false );
 	}

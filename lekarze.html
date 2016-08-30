@@ -3,12 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vet Website">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Vet Website</title>
-    <meta name="Author" content="Grzegorz Cupiał">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/lightbox.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -44,11 +41,11 @@
 	        <li><a href="galeria.html">Galeria</a></li>
 	        <li><a href="kontakt.html">Kontakt</a></li>
 	      </ul>
-	    </nav>
+	    </nav><!-- /.navbar-collapse -->
 	  </div>
 	</nav>
 </header>
-	
+
 <section class="hero">
 	<img class="hero-image" src="img/hero.jpg"/>
 	<div class="hero-overlay">
@@ -61,46 +58,12 @@
 
 <div class="info-bar"><h5 class="hidden-bar"><h4>Klinika czynna:</h4> Pon.-pt.: 9:00 - 17:00 (przerwa 12:00-14:00) Sob.: 10:00 - 14:00 tel.513 586 558</div>
 
-<section class="about">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 col-xs-12 photo-about">
-				<img class="img-responsive" alt="Responsive image" src="img/1.jpg">
-				<div class="background">
-					<h2>Lorem Ipsum</h2>
-					<div class="border"></div>	
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et nisl risus. Nunc non neque eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla scelerisque velit in libero rhoncus aliquet. Cras ac massa velit. Donec viverra rhoncus sem, feugiat pulvinar urna condimentum a.</p>
-				</div>	
-			</div>
-			<div class="col-md-4 col-xs-12 photo-about">
-				<img class="img-responsive" alt="Responsive image" src="img/2.jpg">
-				<div class="background">
-					<h2>Lorem Ipsum</h2>
-					<div class="border"></div>	
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et nisl risus. Nunc non neque eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla scelerisque velit in libero rhoncus aliquet. Cras ac massa velit. Donec viverra rhoncus sem, feugiat pulvinar urna condimentum a.</p>
-				</div>	
-			</div>
-			<div class="col-md-4 col-xs-12 photo-about">
-				<img class="img-responsive" alt="Responsive image" src="img/3.jpg">
-				<div class="background">
-					<h2>Lorem Ipsum</h2>
-					<div class="border"></div>	
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et nisl risus. Nunc non neque eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla scelerisque velit in libero rhoncus aliquet. Cras ac massa velit. Donec viverra rhoncus sem, feugiat pulvinar urna condimentum a.</p>
-				</div>	
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="separator">
-	<div class="separator-overlay">
-		<h1>"Zwierzę jako istota żyjąca, zdolna do odczuwania cierpienia, nie jest rzeczą. Człowiek jest mu winien poszanowanie, ochronę i opiekę"*</h1>
-		<h5>* Ustawa z dnia 21 sierpnia 1997 r. o ochronie zwierząt (t.j. Dz.U. z 2003 r. nr 106, poz. 1002 z późn. zm.)</h5>
-	</div>
-</section>
-
 <section class="doctors">
 	<div class="container">
+		<ol class="breadcrumb">
+  			<li><a href="index.html">Start</a></li>
+  			<li class="active">Lekarze</li>
+		</ol>
 		<div class="row">
 			<div class="col-xs-12 title">
 				<h1>Poznaj naszych lekarzy</h1>
@@ -129,15 +92,34 @@
 					<div class="border"></div>	
 					<p class="doctor-describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et nisl risus.</p>
 				</div>	
-			</div>	
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 doctors-photo photo-about">
+				<img class="img-responsive" alt="Responsive Image" src="img/doc2.jpg">
+				<div class="background">
+					<h4 class="doctor-name">lek. wet. Anna Kowalska</h4>
+					<div class="border"></div>	
+					<p class="doctor-describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et nisl risus.</p>
+				</div>	
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 doctors-photo photo-about">
+				<img class="img-responsive" alt="Responsive Image" src="img/doc1.jpg">
+				<div class="background">
+					<h4 class="doctor-name">dr n. wet. Andrzej Kowalski</h4>
+					<div class="border"></div>	
+					<p class="doctor-describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et nisl risus.</p>
+				</div>	
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 doctors-photo photo-about">
+				<img class="img-responsive" alt="Responsive Image" src="img/doc2.jpg">
+				<div class="background">
+					<h4 class="doctor-name">lek. wet. Anna Kowalska</h4>
+					<div class="border"></div>	
+					<p class="doctor-describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et nisl risus.</p>
+				</div>	
+			</div>
 		</div>
-		<button class="button" type="submit"><a href="lekarze.html">Pokaż Wszystkich</a></button>
 	</div>
 </section>
-
-
-
-<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.706965873279!2d21.010241416012967!3d52.230541479760454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eccf375355ceb%3A0xf0ff115274faedd8!2sRotunda%2C+Warszawa!5e0!3m2!1spl!2spl!4v1470901827770" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 <footer>
 	<div class="container">
@@ -157,9 +139,11 @@
 	</div>
 </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/classie.js"></script>
 <script src="js/cbpAnimatedHeader.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/formactive.js"></script>
+<script src="js/backToTop.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 
